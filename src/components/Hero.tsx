@@ -1,6 +1,5 @@
-'use client';
-
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 // Frames descending from 44 to 18
 const frames = [
@@ -45,8 +44,16 @@ export default function Hero() {
 
         const resizeCanvas = () => {
             if (!canvas.parentElement) return;
-            canvas.width = canvas.parentElement.clientWidth;
-            canvas.height = canvas.parentElement.clientHeight;
+            const dpr = window.devicePixelRatio || 1;
+            const rect = canvas.parentElement.getBoundingClientRect();
+
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+
+            context.scale(dpr, dpr);
+            canvas.style.width = `${rect.width}px`;
+            canvas.style.height = `${rect.height}px`;
+
             requestAnimationFrame(render);
         };
 
@@ -64,30 +71,39 @@ export default function Hero() {
             if (progress < 0) progress = 0;
             if (progress > 1) progress = 1;
 
-            // Map progress to frame index
+            // Map progress to absolute frame index (float for interpolation)
             const totalFrames = frames.length;
-            const frameIndex = Math.min(
-                totalFrames - 1,
-                Math.floor(progress * totalFrames)
-            );
+            const absoluteFrame = progress * (totalFrames - 1);
+            const frameIndex = Math.floor(absoluteFrame);
+            const nextFrameIndex = Math.min(frameIndex + 1, totalFrames - 1);
+            const mix = absoluteFrame - frameIndex;
 
             const img = images[frameIndex];
+            const nextImg = images[nextFrameIndex];
 
             if (img) {
-                // Draw image 'cover' style
-                const hRatio = canvas.width / img.width;
-                const vRatio = canvas.height / img.height;
-                const ratio = Math.max(hRatio, vRatio);
-
-                const centerShift_x = (canvas.width - img.width * ratio) / 2;
-                const centerShift_y = (canvas.height - img.height * ratio) / 2;
-
                 context.clearRect(0, 0, canvas.width, canvas.height);
-                context.drawImage(
-                    img,
-                    0, 0, img.width, img.height,
-                    centerShift_x, centerShift_y, img.width * ratio, img.height * ratio
-                );
+                context.imageSmoothingEnabled = true;
+                context.imageSmoothingQuality = 'high';
+
+                const drawFrame = (image: HTMLImageElement, opacity: number) => {
+                    const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
+                    const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
+                    const ratio = Math.max(hRatio, vRatio);
+
+                    const w = image.width * ratio;
+                    const h = image.height * ratio;
+                    const x = ((canvas.width / window.devicePixelRatio) - w) / 2;
+                    const y = ((canvas.height / window.devicePixelRatio) - h) / 2;
+
+                    context.globalAlpha = opacity;
+                    context.drawImage(image, x, y, w, h);
+                };
+
+                drawFrame(img, 1 - mix);
+                if (mix > 0 && nextImg !== img) {
+                    drawFrame(nextImg, mix);
+                }
             }
         };
 
@@ -135,10 +151,12 @@ export default function Hero() {
                         Ristrutturazioni Edili e Consulenza Tecnica per la riqualificazione del patrimonio immobiliare. Un approccio moderno basato su solide competenze tecniche.
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <button className="bg-primary text-white px-8 py-4 rounded-lg text-base font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
-                            Scopri i Servizi
-                            <span className="material-symbols-outlined">arrow_forward</span>
-                        </button>
+                        <Link href="/servizi">
+                            <button className="bg-primary text-white px-8 py-4 rounded-lg text-base font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
+                                Scopri i Servizi
+                                <span className="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

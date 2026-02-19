@@ -21,21 +21,34 @@ export default function Navbar() {
                     </div>
 
                     <nav className="hidden md:flex items-center gap-8">
-                        {['Home', 'Chi Siamo', 'Servizi', 'Progetti', 'Metodo'].map((item) => (
+                        {[
+                            { name: 'Home', href: '/' },
+                            { name: 'Chi Siamo', href: '/chi-siamo' },
+                            { name: 'Servizi', href: '/servizi' },
+                            { name: 'Progetti', href: '/progetti' },
+                            { name: 'Metodo', href: '/metodo' }
+                        ].map((item) => (
                             <Link
-                                key={item}
-                                href="#"
+                                key={item.name}
+                                href={item.href}
                                 className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         ))}
                     </nav>
 
                     <div className="flex items-center gap-4">
-                        <button className="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:bg-primary/90 transition-all shadow-sm">
-                            Contatti
-                        </button>
+                        <img
+                            alt="Logo S.I.I. SRL"
+                            className="h-14 w-auto rounded-lg shadow-sm"
+                            src="https://lh3.googleusercontent.com/d/11zhmHeiQhJ-2qzMV6Sd6tFzoBqH0J5RO"
+                        />
+                        <Link href="/contatti">
+                            <button className="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:bg-primary/90 transition-all shadow-sm">
+                                Contatti
+                            </button>
+                        </Link>
                         <button
                             className="md:hidden text-slate-900 dark:text-white p-2"
                             onClick={() => setIsOpen(!isOpen)}
@@ -50,13 +63,19 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800">
                     <div className="px-4 pt-2 pb-4 space-y-1">
-                        {['Home', 'Chi Siamo', 'Servizi', 'Progetti', 'Metodo'].map((item) => (
+                        {[
+                            { name: 'Home', href: '/' },
+                            { name: 'Chi Siamo', href: '/chi-siamo' },
+                            { name: 'Servizi', href: '/servizi' },
+                            { name: 'Progetti', href: '/progetti' },
+                            { name: 'Metodo', href: '/metodo' }
+                        ].map((item) => (
                             <Link
-                                key={item}
-                                href="#"
+                                key={item.name}
+                                href={item.href}
                                 className="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md"
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         ))}
                     </div>

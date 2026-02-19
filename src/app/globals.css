@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  scroll-behavior: smooth;
   --background: #f6f8f8;
   --foreground: #0f172a;
   /* slate-900 equivalent */
