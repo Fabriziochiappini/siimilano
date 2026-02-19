@@ -16,7 +16,7 @@ export default function ServiziPage() {
                                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase rounded mb-6">Eccellenza Tecnica</span>
                                 <h1 className="text-6xl md:text-7xl font-bold leading-[0.9] mb-8">Servizi</h1>
                                 <h2 className="text-2xl md:text-3xl font-medium text-slate-600 dark:text-slate-400 leading-snug">
-                                    Soluzioni ingegneristiche avanzate per la <span className="text-slate-900 dark:text-slate-100 font-bold underline decoration-primary/40">riqualificazione</span> e la <span class="text-slate-900 dark:text-slate-100 font-bold underline decoration-primary/40">sicurezza</span>.
+                                    Soluzioni ingegneristiche avanzate per la <span className="text-slate-900 dark:text-slate-100 font-bold underline decoration-primary/40">riqualificazione</span> e la <span className="text-slate-900 dark:text-slate-100 font-bold underline decoration-primary/40">sicurezza</span>.
                                 </h2>
                             </div>
                             <div className="relative group">
