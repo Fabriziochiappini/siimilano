@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'Chi Siamo', href: '/chi-siamo' },
+    { label: 'Servizi', href: '/servizi' },
+    { label: 'Progetti', href: '/progetti' },
+    { label: 'Metodo', href: '/metodo' },
+    { label: 'Contatti', href: '/contatti' },
+];
+
 export default function Footer() {
     return (
         <footer className="bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 pt-20 pb-10 mt-20">
@@ -18,20 +27,20 @@ export default function Footer() {
                             Eccellenza tecnica nella riqualificazione immobiliare. Trasformiamo gli edifici di oggi negli spazi sicuri e sostenibili di domani.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="#" className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600 dark:text-slate-400">
-                                <span className="material-symbols-outlined text-sm">public</span>
-                            </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600 dark:text-slate-400">
+                            <a href="mailto:siisrl.milano@gmail.com" className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600 dark:text-slate-400">
                                 <span className="material-symbols-outlined text-sm">mail</span>
-                            </Link>
+                            </a>
+                            <a href="tel:0236742919" className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600 dark:text-slate-400">
+                                <span className="material-symbols-outlined text-sm">phone</span>
+                            </a>
                         </div>
                     </div>
                     <div>
                         <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">Navigazione</h4>
                         <ul className="space-y-4">
-                            {['Home', 'Chi Siamo', 'Servizi', 'Progetti', 'Metodo'].map(item => (
-                                <li key={item}>
-                                    <Link href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary text-sm transition-colors">{item}</Link>
+                            {navLinks.map(item => (
+                                <li key={item.label}>
+                                    <Link href={item.href} className="text-slate-600 dark:text-slate-400 hover:text-primary text-sm transition-colors">{item.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -41,21 +50,31 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <span className="material-symbols-outlined text-primary text-xl">location_on</span>
-                                <span className="text-sm text-slate-600 dark:text-slate-400">Milano, Italia</span>
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-slate-400 uppercase tracking-wider mb-1">Sede Legale</span>
+                                    <span className="text-sm text-slate-600 dark:text-slate-400">Via L. Manara 15, Milano (MI)</span>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="material-symbols-outlined text-primary text-xl">location_on</span>
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-slate-400 uppercase tracking-wider mb-1">Sede Operativa</span>
+                                    <span className="text-sm text-slate-600 dark:text-slate-400">Via Gadames 85, Milano (MI)</span>
+                                </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="material-symbols-outlined text-primary text-xl">phone</span>
-                                <span className="text-sm text-slate-600 dark:text-slate-400">+39 02 1234567</span>
+                                <a href="tel:0236742919" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">02 36742919</a>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="material-symbols-outlined text-primary text-xl">mail</span>
-                                <span className="text-sm text-slate-600 dark:text-slate-400">info@siisrlmilano.it</span>
+                                <a href="mailto:siisrl.milano@gmail.com" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">siisrl.milano@gmail.com</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-slate-400">© 2024 S.I.I. SRL Milano. Tutti i diritti riservati. P.IVA 12345678901</p>
+                    <p className="text-xs text-slate-400">© 2025 S.I.I. SRL Milano. Tutti i diritti riservati. P.IVA 12287510965</p>
                     <div className="flex gap-6">
                         <Link href="#" className="text-xs text-slate-400 hover:text-primary">Privacy Policy</Link>
                         <Link href="#" className="text-xs text-slate-400 hover:text-primary">Cookie Policy</Link>

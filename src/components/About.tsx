@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
     return (
         <section className="py-24 bg-background-light dark:bg-background-dark overflow-hidden">
@@ -6,7 +8,7 @@ export default function About() {
                     <div className="relative group">
                         <div className="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
                         <img
-                            alt="Architectural details"
+                            alt="Cantiere S.I.I. SRL Milano"
                             className="relative rounded-xl bw-filter shadow-2xl w-full aspect-square object-cover"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgsixixzeDFedd7Isa16QDANvQ79Cp35BrSwgaIBA76VdqIL4TYIOGel7sA-Ef8i6Qp37sT-ypBpxxS9F5D9oCLX9H4_QaMBwUZH7GgIRv7X-A282xhajLrpOq84lzeevLI71NOvD0ixj3ZlCMOU7MBrRmXq1DcXDAi3585Gbd7XP8nH89_wH5pCHV8hkrLf0H6f2tRSAazHFOdsW4d9zyJbmm04JlcZhv0W6AHsnA5If8bVOLU_v1PKwK1vlQnUqAzj300aov19o"
                         />
@@ -20,23 +22,13 @@ export default function About() {
                             <span className="text-primary font-bold tracking-widest uppercase text-sm block mb-2">Chi Siamo</span>
                             <h2 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white leading-tight">Solidità tecnica, visione contemporanea.</h2>
                             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-                                S.I.I. SRL nasce nel 2022 a Milano dalla volontà di integrare l'esperienza ultraventennale dei propri fondatori con le più moderne tecnologie costruttive. La nostra missione è guidare la trasformazione del patrimonio immobiliare attraverso interventi mirati di riqualificazione energetica e strutturale.
+                                S.I.I. SRL nasce nel 2022 dall&apos;unione di esperienze consolidate nel settore edilizio e dalla visione di Ovidio Borin, imprenditore con oltre 20 anni di attività nel comparto. La società si propone come partner tecnico di riferimento per la riqualificazione energetica e strutturale del patrimonio immobiliare milanese, integrando competenze ingegneristiche avanzate con un approccio orientato alla sostenibilità e all&apos;innovazione.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 gap-6 pb-4">
-                            <div className="flex items-start gap-3">
-                                <span className="material-symbols-outlined text-primary">check_circle</span>
-                                <span className="font-medium text-sm text-slate-700 dark:text-slate-300">Qualità Certificata</span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <span className="material-symbols-outlined text-primary">check_circle</span>
-                                <span className="font-medium text-sm text-slate-700 dark:text-slate-300">Milano e Provincia</span>
-                            </div>
-                        </div>
-                        <button className="group inline-flex items-center gap-3 text-slate-900 dark:text-white font-bold text-lg hover:text-primary transition-colors">
+                        <Link href="/chi-siamo" className="group inline-flex items-center gap-3 text-slate-900 dark:text-white font-bold text-lg hover:text-primary transition-colors">
                             La Nostra Storia
                             <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_right_alt</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

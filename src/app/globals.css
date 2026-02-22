@@ -2,26 +2,27 @@
 
 :root {
   scroll-behavior: smooth;
-  --background: #f6f8f8;
-  --foreground: #0f172a;
-  /* slate-900 equivalent */
+  --background: #ffffff;
+  --foreground: #3e3e3e;
 }
 
 @theme inline {
-  --color-primary: #3cbfc3;
+  /* ── Palette ufficiale S.I.I. SRL ── */
+  --color-primary:          #3cbfc3;   /* Turchese brand */
+  --color-petrol:           #2c4a55;   /* Petrolio scuro (footer/contatti) */
+  --color-neutral-dark:     #3e3e3e;   /* Antracite */
   --color-background-light: #f6f8f8;
-  --color-background-dark: #141e1e;
-  --color-neutral-dark: #3e3e3e;
+  --color-background-dark:  #3e3e3e;   /* Antracite come dark bg */
 
-  --font-display: var(--font-space-grotesk), sans-serif;
-  --font-sans: var(--font-space-grotesk), sans-serif;
+  /* ── Tipografia ── */
+  --font-display: var(--font-oswald), sans-serif;
+  --font-sans:    var(--font-lora), serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #141e1e;
+    --background: #3e3e3e;
     --foreground: #f1f5f9;
-    /* slate-100 equivalent */
   }
 }
 
@@ -29,6 +30,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-display {
+  font-family: var(--font-display);
 }
 
 .bw-filter {

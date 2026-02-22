@@ -119,7 +119,7 @@ export default function ContattiPage() {
                                                 </div>
                                                 <div>
                                                     <p className="font-black text-slate-500 text-[10px] uppercase tracking-widest mb-1">Email</p>
-                                                    <p className="text-xl font-medium tracking-tight">info@siisrlmilano.it</p>
+                                                    <p className="text-xl font-medium tracking-tight">siisrl.milano@gmail.com</p>
                                                 </div>
                                             </div>
                                             <div className="flex gap-5">
@@ -128,13 +128,13 @@ export default function ContattiPage() {
                                                 </div>
                                                 <div>
                                                     <p className="font-black text-slate-500 text-[10px] uppercase tracking-widest mb-1">Telefono</p>
-                                                    <p className="text-xl font-medium tracking-tight">+39 02 1234567</p>
+                                                    <p className="text-xl font-medium tracking-tight">02 36742919</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="pt-8 border-t border-white/5 flex justify-between items-center">
-                                        <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">P.IVA: 01234567890</p>
+                                        <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">P.IVA: 12287510965</p>
                                         <div className="flex gap-3">
                                             <div className="size-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all cursor-pointer">
                                                 <span className="material-symbols-outlined text-xs italic">share</span>
@@ -180,7 +180,7 @@ export default function ContattiPage() {
                         <div className="flex flex-wrap justify-center gap-6">
                             <a
                                 className="px-12 py-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-black rounded-xl hover:brightness-125 transition-all uppercase tracking-tighter italic text-lg shadow-2xl"
-                                href="tel:+39021234567"
+                                href="tel:0236742919"
                             >
                                 Chiamaci ora
                             </a>

@@ -12,7 +12,7 @@ export default function ContactCTA() {
                     </div>
                     <Link href="/contatti">
                         <button className="bg-slate-900 text-white px-10 py-5 rounded-xl text-lg font-bold hover:bg-slate-800 transition-all shadow-xl whitespace-nowrap">
-                            Richiedi un Preventivo
+                            Contattaci Ora
                         </button>
                     </Link>
                 </div>

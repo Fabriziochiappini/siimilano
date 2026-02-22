@@ -12,7 +12,6 @@ export default function Navbar() {
         { name: 'Servizi', href: '/servizi' },
         { name: 'Progetti', href: '/progetti' },
         { name: 'Metodo', href: '/metodo' },
-        { name: 'Contatti', href: '/contatti' }
     ];
 
     return (
@@ -43,10 +42,11 @@ export default function Navbar() {
                     </nav>
 
                     <div className="flex items-center gap-4">
-                        <Link href="/contatti">
-                            <button className="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:bg-primary/90 transition-all shadow-sm">
-                                Preventivo
-                            </button>
+                        <Link
+                            href="/contatti"
+                            className="hidden md:inline-flex bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:bg-primary/90 transition-all shadow-sm"
+                        >
+                            Contatti
                         </Link>
                         <button
                             className="md:hidden text-slate-900 dark:text-white p-2"
@@ -67,10 +67,18 @@ export default function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 className="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md"
+                                onClick={() => setIsOpen(false)}
                             >
                                 {item.name}
                             </Link>
                         ))}
+                        <Link
+                            href="/contatti"
+                            className="block px-3 py-2 text-base font-bold text-primary hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Contatti
+                        </Link>
                     </div>
                 </div>
             )}
