@@ -15,7 +15,7 @@ export default function ChiSiamoPage() {
                         <img
                             alt="Architettura Moderna"
                             className="w-full h-full object-cover grayscale transition-all duration-500 hover:grayscale-0"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWYWZ2Zyd4cH7QnQeb5Gb9bv5P_5pkRhSNLNQjaJhhoL1v_HvxsE_-O-Xfy9yAcZO29ilfTku29Z1Ug6PaWe5jYdyGbNgiF_WRmBHgSAPtnV6fgykROsMKf7KdNcWF3KPSUjDxGe_QOdBSoShkSlQbBzHh_hXjsaOMqnyO7vYvMcPANQODoqjMpxISFNXnxeN-aDnaOOwqSp1YY6s5A0e4Mq7O97HhzcJdH6mAMa_DdpulbF9K9WGhxUPiALun-_aIIZHStUp7Zsc"
+                            src="/images/hero-ponteggi-facciata.jpg"
                         />
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-6 w-full">
@@ -47,7 +47,7 @@ export default function ChiSiamoPage() {
                                 <img
                                     alt="Cantiere Edile"
                                     className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHMthOw-1qIsRKgTE5P0ZNWmjYkbJNOWwl2VPlOP7lBRRLJc5IIPd8aYBiJrI6Qi6mWR6Iod8VOPyaH0wFRx0FLDaR7Emn8CU4ddo40jZWKa5sNeircBU8AupOklEmz2DYL4mMGobKM4KMyhCfIgtngdOkKzepet5NGASMlRiky7HVys3VQOCH6oc3A1InZ3xBDLCBesAgqPUwbI3qLX4Z4kwZvW_3v7OQG4r43evSm4Ypn0tsuJO2o2zyMM13F216FX1TSVP6QEs"
+                                    src="/images/operaio-struttura-cemento.jpg"
                                 />
                             </div>
                         </div>
@@ -63,7 +63,7 @@ export default function ChiSiamoPage() {
                                     <img
                                         alt="Ovidio Borin"
                                         className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZfwuWCFMwW4uex2D1kWW5igp0UGOtUElNvNmyGfbg-oJDrnLmM5iCL5EkhmOAT7KszM9_9YDaedH9tqtpKXWRhUcoHCTcsRzPp2rzc70tNwDncJTRSwvmhXG23hYU9tMFiVAwtgJYvMlOlMP3woUMG_ZJfMLc_i5mGx1NZ8cMN0YyYDI0tYsVWOG154bD8KlttE5lq6JMPf9hYew226ZybyzrS0o-K4jF-RSowHdaGFv5hSKd6YCKydy5mgJpeyW0kj-Pjsgy_5E"
+                                        src="/images/cantiere-cemento-armato-grande.jpg"
                                     />
                                 </div>
                             </div>
@@ -98,17 +98,17 @@ export default function ChiSiamoPage() {
                             {
                                 title: 'Area Ingegneria',
                                 desc: 'Specialisti in calcoli strutturali e sicurezza sismica.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBn-6po9UTcQ-S2pzj695BcRG9AS0XEIoFq0KWimM-948h7eBTC1slK-9P09aPCSHw3KfPlO0ZPRLkwwrFVw-O0H8KGlZ9_zBkSBZSuGBApUAsQOBlenjxPzgQ7uk9LNMnR4Twjt99C8ZBjc2aMFIYmI4KbabAcBzw8DS0_CkmBNb4F7QosBnsbwDctXqHo-50jYp94ZZJ1ifg_EtRoC8rX-aVknch-XLUqduuLL4SbQwj2d1LvSq4ecbdlOMgGHGBu7FRC7CRQ6RE'
+                                img: '/images/team-cantiere-sopralluogo.jpg'
                             },
                             {
                                 title: 'Design & Architettura',
                                 desc: 'Creativi focalizzati sulla sostenibilità e sull\'estetica moderna.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBaUJOoV6-eY0c5j8w0FHn7OJ-823rLXK7IbVEaF1CO43t-cZEbYJBAgGpOBlobcSmcVIZBRCp0ZseIvUPOF_PPFHhBIPNzRVFU8WzpwikQOToJxri8q_6YLQNwEQapj2uhfcmLCZsi-h1KyCSnGVdjuJVo1KoFWlsrYLMvPB8z4WmEErXvSsaE7etAqZfml8bP7v_kD1SkzlkIS9iFres8TWoW1MUvE7B_wlaCfqqOJYUMFGzCmCDEUSygWbGRKP7Nby6-TPRlDXs'
+                                img: '/images/operaio-ferri-armatura.jpg'
                             },
                             {
                                 title: 'Project Management',
                                 desc: 'Esperti nella gestione dei tempi e ottimizzazione delle risorse.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5m6eq26wBFAEXSzFsh9MiTwZXtOz7hvud7PXzTr4dsCpbVNZ-m6H1V5in_smUciR4-gQ1pXz9Grfs2ADB6Om-1TjO-wtylULR2eU2C-_4hpv13QhOGsGIjegCTnrYh-glET9xPcXIw06chiqXt_C-e4ZCtVkXodxi7i2vfftALVna-M37qIhFHB8eMkOt-fhJf9_S0s2YWN0jhFzNtwb4RL_Wu7tyjjM2yBtyB1yto_hCOFOYF2HTnu5LLYZ_SGe1Tzbfpp9Ze-s'
+                                img: '/images/edificio-costruzione-ponteggi.jpg'
                             }
                         ].map((team) => (
                             <div key={team.title} className="group">

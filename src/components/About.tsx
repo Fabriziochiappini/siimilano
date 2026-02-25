@@ -10,7 +10,7 @@ export default function About() {
                         <img
                             alt="Cantiere S.I.I. SRL Milano"
                             className="relative rounded-xl bw-filter shadow-2xl w-full aspect-square object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgsixixzeDFedd7Isa16QDANvQ79Cp35BrSwgaIBA76VdqIL4TYIOGel7sA-Ef8i6Qp37sT-ypBpxxS9F5D9oCLX9H4_QaMBwUZH7GgIRv7X-A282xhajLrpOq84lzeevLI71NOvD0ixj3ZlCMOU7MBrRmXq1DcXDAi3585Gbd7XP8nH89_wH5pCHV8hkrLf0H6f2tRSAazHFOdsW4d9zyJbmm04JlcZhv0W6AHsnA5If8bVOLU_v1PKwK1vlQnUqAzj300aov19o"
+                            src="/images/hero-ponteggi-facciata.jpg"
                         />
                         <div className="absolute bottom-6 right-6 bg-primary p-6 rounded-lg text-white max-w-[200px] shadow-xl">
                             <span className="text-4xl font-bold block mb-1">2022</span>

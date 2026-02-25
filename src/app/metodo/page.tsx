@@ -14,7 +14,7 @@ export default function MetodoPage() {
                         <img
                             alt="Architectural background"
                             className="w-full h-full object-cover bw-filter opacity-40"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_tDfgTfHxxHM6k7M1i-0YB8-21R98Uc4r-VMjSghXTcxQ47imZpJKzZN_x9uxRUBr4OBVOawZIQ5j7RgzSYrqO7VTgc1G9elrc98LWUQ7Wl4s3CMYpu_j9eReY27mzkUojwjmmtr05bc503Vac6fgVFQBPx7XU40YN8pZluTCJHQumcu1UU8YC4WlLn0FzMIJXgML3HJzBobmArnJFa-R9QJ3y_6LdDQUNV4mfo_arboVADv2Y7A_ul9gJBHGPGcEaa19r5lK2TI"
+                            src="/images/cantiere-cemento-armato-grande.jpg"
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-background-light/20 to-background-light dark:from-background-dark/20 dark:to-background-dark"></div>
                     </div>
@@ -110,7 +110,7 @@ export default function MetodoPage() {
                             <img
                                 alt="Technical detail"
                                 className="rounded-xl bw-filter shadow-2xl relative z-10 aspect-square object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVbcNR_TtW6WH451wmqCIFOV5Ogrma225hQRpjB4ICEvlKQeq63JNfLEkK-h5J-MW9YKy_GJlvo2tYVcqbGJWWNgVpszDx-6eUQKgxD_YRWMSPAwWtuVHvH63G1nSndcwhvfiYDpSSSaV3DIsbE3h4aDuta0N70flHoLmyLenVADTb0IL-Qk_dlJ-SuZws8lPnCefilSPBxz8-O6Km7URcbnyrNK5BNYW6Z95NsVLiapzhgrV8NbMFBbjpI1VxzdB1nLydbVQ5HiQ"
+                                src="/images/team-cantiere-sopralluogo.jpg"
                             />
                             <div className="absolute bottom-6 right-6 z-20 bg-primary p-6 rounded-lg text-slate-900 border-black border-2">
                                 <span className="block text-4xl font-bold text-black">25+</span>

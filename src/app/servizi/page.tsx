@@ -25,7 +25,7 @@ export default function ServiziPage() {
                                     <img
                                         alt="Grattacielo moderno a Milano in bianco e nero"
                                         className="w-full h-full object-cover grayscale contrast-[1.1]"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmi_PncKzxenFJPsUqpIicOLHVn8PKY0PS_VCsL-YFSRRObZKQHWPMGXDWgq73YhhFzrAQYB5d5_QfleU18eBCKSIyuhTOq31RujEyOR5X6Wyv8AyMlCzQZUlf_y8GB32l8jJFXl1vNHwzv-4BQ9WRNGFGGpaub2GQuLv7uVQBuHrUmRTsAf5WBDY42gWb9igmugxIOaHxLYhxXIk142TCxpsv5mK1wZFsVk8R-pFfSJT6V0eYWEjYl5HVcHgWUmzDxfiuh3auXG8"
+                                        src="/images/hero-ponteggi-facciata.jpg"
                                     />
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ export default function ServiziPage() {
                                 {
                                     title: 'Efficientamento Energetico',
                                     icon: 'bolt',
-                                    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD6nYqhlOJiLmtXwXSj05jLNIUfcJ6Gv9AJ0dyrJ4QftE_-a8bEiL9aMgGHAf5lvk-PrOo74mzQjs4ByUetUM_xODRMZMKR0z0cPFhWpEX57zjxRCkpi8QpDm1NE84sxntHnI9TZJfYiHGD4wXQMuZNr3hBPDuPI-lV6IRlyTHV62VUgMEKVTavcEKociWVQESUBq7TX4QhDxizuEEfexEt-KuMgkY9VNaEagWBEWgfLzAnNlE-1G9O_CzUWt1QXPbgHSJMdG8xbZ8',
+                                    img: '/images/cantiere-cemento-armato-grande.jpg',
                                     desc: 'Diagnosi energetiche complete per la riduzione dei consumi. Ci occupiamo della redazione di APE (Attestato di Prestazione Energetica) e della progettazione di impianti ad alta efficienza per condomini e complessi industriali.',
                                     reverse: false,
                                     bullets: [
@@ -89,7 +89,7 @@ export default function ServiziPage() {
                                 {
                                     title: 'Adeguamento Antisismico',
                                     icon: 'domain_verification',
-                                    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAUFndnoaY-i_3caOrbqLXUx-3EBm5j-YFMg0zXrskAcmdtdVbKK0nTnGEq5nm5mW9tbA0bsQQc31WztD7ogBSh8nb3QKp8O5qSi3KH7REMEsB_1GsL_7nUxd3xt5N4ITZD0ht3476xRSOKRPHrSHjw7ZAsqUgp8H5NAe3DgoWn5gI-RAkFxRTcoUQuBYP1-Ah2_nrWGi9igHvoI5tiAcqERTpYTciXFjcsSCMFWgW7-m03YurXi4jY-0eAYQWcxWxQjcM6auUpCG4',
+                                    img: '/images/operaio-struttura-cemento.jpg',
                                     desc: 'Analisi di vulnerabilità sismica per edifici civili e industriali. Implementiamo tecnologie all\'avanguardia come rinforzi in CFRP (fibra di carbonio) e isolatori sismici per garantire la massima sicurezza strutturale.',
                                     reverse: true,
                                     bullets: [
@@ -102,7 +102,7 @@ export default function ServiziPage() {
                                 {
                                     title: 'Ristrutturazioni Edili',
                                     icon: 'construction',
-                                    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBDwZTGM4SGHST9m8zabA29UB9l7IEkzKLmGxq8IXpcNwB92XzfqAOvKVKh92zQ1vwvHjNbj5J3eNZHb6xa0CCtNrBhVqRIOu3Rq7Asv4at2TONlLdl5K0iEYcgZqJZ1T12BxFpB8d2yfLMUSygEHp_76eBCg_CNI_lXROmGwrAsKfPTuuaAB1lblNSvJwTh4l7AxLqcsZrS5z7MAe5CE6YR6Qh4Rw2zr9jqmDO1zGDPqDqpk4h1L1RVjX6fy7vMpS2q9dTMcjqAiU',
+                                    img: '/images/operaio-ferri-armatura.jpg',
                                     desc: 'Gestione completa di progetti "Chiavi in Mano". Dalla progettazione architettonica alla direzione lavori, coordiniamo ogni fase del cantiere per assicurare il rispetto di tempi, costi e standard qualitativi.',
                                     reverse: false,
                                     bullets: [
@@ -115,7 +115,7 @@ export default function ServiziPage() {
                                 {
                                     title: 'Cappotti Termici (ETICS)',
                                     icon: 'home_repair_service',
-                                    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBcuzMH-unwsKeQ7aljHyl6CFNdgH6gFSWmOFacBhxxxm7xcq8zRcXtWYrvNto9sFHzsLUsnYypAjM_HW1qPhzYD416xnMP12-y4c4BuulsyImO7zLlYhLZs6UIbWI5XqQy0fc6f3FyoRDpxvhiDYmdd0vkI03jGzseTPsLZUuUtrlAo-kFS4S-1sh5FoNgblkTbfxvJsng2SqI1ITDpOF6Xu1i8PoUxFXzGpg4FWgjsLpifdy9QfsiUW0dbSdyoiMV1bK-3tPmR-M',
+                                    img: '/images/edificio-costruzione-ponteggi.jpg',
                                     desc: 'Installazione di sistemi di isolamento termico a cappotto certificati ETICS. Progettiamo l\'involucro edilizio per eliminare i ponti termici e migliorare radicalmente il comfort igrometrico interno.',
                                     reverse: true,
                                     bullets: [
@@ -128,7 +128,7 @@ export default function ServiziPage() {
                                 {
                                     title: 'Consulenza Tecnica Strategica',
                                     icon: 'psychology',
-                                    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAV1HvtVJ7rqr8b4KFteryefd2K0_k42goEwrTw_7MjdBiXVbR67HYJfSxta5ZDRbIHgvpvaNjbXwlZk_REKBa18Tk3uvPtzyG8bs-vEKis9WLLI2r7PpAjhiCWSPmB_5xwB6FASNOSIoinY4KiQp_8Yw3SGY-jY9sltSCsctifBz-SfCR9VOKkHL_-NtDHjMyAuoZujzSLYEv-nHMVPvxyc9GOROynoAUjWcFn9Sa54gxNfZX5l4UiYqj1cV5LbjqD2gVMzLKk4b8',
+                                    img: '/images/team-cantiere-sopralluogo.jpg',
                                     desc: 'Supporto specialistico per studi di fattibilità tecnico-economica. Esperti nella gestione di incentivi fiscali come il Superbonus, forniamo asseverazioni e due diligence per compravendite immobiliari.',
                                     reverse: false,
                                     bullets: [

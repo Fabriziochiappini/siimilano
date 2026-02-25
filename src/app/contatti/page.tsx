@@ -149,7 +149,7 @@ export default function ContattiPage() {
                                 <div className="h-64 w-full bg-slate-200 dark:bg-slate-800 relative cursor-pointer">
                                     <div
                                         className="absolute inset-0 bg-cover bg-center grayscale contrast-125 brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
-                                        style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8eL-LveLsLQrWpS0vBT-EYLjmSIerKZZklMOfvC9OkNTPodo7QodqUv3wjDw9SSg4Dqt6sAoVR5-FmG42e7FlG4bCBXFL3j7YNyZRvt4srfFDP4ZBWFlTPaWS6wNSc15vHfyZsM7ptr4ycmbBu9ZJPrrhf4plu76iwkfUor5kVbAlRFOV5yniXy35g9iBf3UiYdt8ZxbcrCFZnhudb7byyMS34isFyq-vPJ7SkVneF99H6ax6pz6ywrI-ZVG6VB5s-xCFWYxmbQI')" }}
+                                        style={{ backgroundImage: "url('/images/cantiere-cemento-armato-grande.jpg')" }}
                                     ></div>
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="bg-primary p-5 rounded-full shadow-2xl animate-bounce">

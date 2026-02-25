@@ -56,37 +56,37 @@ export default function ProgettiPage() {
                                 title: 'Residenza San Babila',
                                 tag: 'Efficientamento',
                                 desc: 'Intervento di riqualificazione energetica profonda con installazione di pannelli fotovoltaici integrati.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC95B2KgTSq-Z-go2ftBfavFUbKo-Ezey-UWbVvcPh7jW3lZKEJE7I86aVSv5-N7sxz9q_Wbmpts0ebULNpx8BhFGzMS9mDRtVqipI5NqfKS2VxGfPUo65CEarhazQXEzw6gkEL0C4zV3_0kYWHns8ii3R-0Mv91iMHsd5JKkelzCGG0Ujjgw5jFrUwhrLpHXoiGbz-qOnJcJhIW5N9hutCpopIsgP39iv9_4zfkpPfsOETfQkqOv61LMqs1GEqcgWa8YFWqcHJ3B0'
+                                img: '/images/hero-ponteggi-facciata.jpg'
                             },
                             {
                                 title: 'Complex Navigli B4',
                                 tag: 'Antisismico',
                                 desc: 'Messa in sicurezza sismica di un edificio storico degli anni \'30 mediante esoscheletro metallico.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9IFJwcMKSwDzDBQ8Oe6_GQEKguDC9SyX0P-Sh6wPNSRUo0m3LksxnmGp1Ah06i7lTsRdGbRuymWG8kJuvCkmHv9YD1og081hnaxOe9jM3FZaj-l_ySV_uBuJw0BGyuPAH4auBE_YwuRfdkNyA5eI1pHGa6muu8ldNpwCEZ3ZvRg_k1DRygrBySjxBgzxEf2xIwds1jriBIVSqrIweiCapWnGyCdXeiTp0cDnkxUALytJqhU_1Ru-V6cCdRP3Ax7pPNu3Icwx7NoA'
+                                img: '/images/cantiere-cemento-armato-grande.jpg'
                             },
                             {
                                 title: 'Green Towers Porta Nuova',
                                 tag: 'Cappotti',
                                 desc: 'Applicazione di cappotto termico ad alte prestazioni su facciata continua di 12 piani.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNmsV9_Om5UGZfT1_aEb5h3finBU3uFuD6AjKDjHKd5GqbpeSl4Fn0xqTLrWMaYImunajqZOwzetagpaeQNWEfXO9uc8U3H6RKkbO87EUwveC0L099NhbuQwIES6qVdV5NSjySh3PQmvz-uNXlDrZgZ-BuYDbeEJaz2Rsc5Soq9MRDkcbuCJ-hWsAnCoJwg8hh7o1zRGAxOq4Qql2noLIQcSW9qMfAzMM0XLD8GlWNCu-FyxyuafeMfTjXflW8yE-ic80WCnRMFxI'
+                                img: '/images/operaio-struttura-cemento.jpg'
                             },
                             {
                                 title: 'Loft Isola Project',
                                 tag: 'Ristrutturazioni',
                                 desc: 'Conversione di ex area industriale in loft residenziali di lusso con finiture premium.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2GdkNTnzvewTTjqtZkP9wxHliDqjTcYAVCDG8DCtZHxYYj-urGaQwUMuZ4v_56fAQ5bZa9BUwItIAt8wdqGJxtRgdaPhFA-X0qzsuzLikdZO5bYlGEvc6Nqmqw5Cl3HgeKgXOr5l8fGRwc1AyGCg0eqYqXlS2ndpNMyCrAT2UV9TCs2sRAUcn0uR2o2cCvxeb14ZdGqMhXn0K7w2HAV6EWXruq5A60ApNQBlaJbGNPCLedABkpAu2m6ea3qJd8tNtCtMaSyzGk7A'
+                                img: '/images/operaio-ferri-armatura.jpg'
                             },
                             {
                                 title: 'CityLife Smart Living',
                                 tag: 'Efficientamento',
                                 desc: 'Integrazione di sistemi domotici avanzati per il controllo energetico centralizzato.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAzNQPRb1OjK2syUdABaO7bKhY5lw8v9WHKXXxt5bM2ZdS0gjNyxNjxjSXMdzdjAbJLik475fMpOHkvMlmpz24yOF3zOP9bf8irAwa7GgfGc5wPQCnNQUVUXkPEbf53lh85mE7q4u2U_cnL0vgyKlicmlvEaW3pMRI4nJEhp2Ao5eoP11zN70xsIdcR-w2knsBHU9uKeTdy9KULL93zHhpwiV4ozbkfJ9a3iDBuwUaPJf9OT5K6ew6CgO9Wzq6PEdVjlfEvlEIATZc'
+                                img: '/images/team-cantiere-sopralluogo.jpg'
                             },
                             {
                                 title: 'Headquarter Brera',
                                 tag: 'Ristrutturazioni',
                                 desc: 'Risanamento conservativo di palazzo d\'epoca con rifacimento completo degli impianti.',
-                                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOkY_ev9nPBDhy7Z6dcLLUMZl4z7fw4hMl9WVNg5TIgxmusFxUqe2nD_93vlDDDHtdKKXtrbG36k8r-BJ8qf4P9H_nbF5B9pNuv-Gk8SJnLZ_5qkqMEuYnn5-UnUvV9cJHMYh3K1DVne2o1qtwg6O89YLd2zmpOix8mRR26wDxMBGsLCgyIj9AdwWqxnXFhszqccDQjZyJEcGkk6wAmAb0aDbgjqUn3ZGCDapfSDncim1oxd7dgOFfMW6RbxjJEddkJlKFkD5925s'
+                                img: '/images/edificio-costruzione-ponteggi.jpg'
                             }
                         ].map((project) => (
                             <div key={project.title} className="project-card group cursor-pointer relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[4/5]">

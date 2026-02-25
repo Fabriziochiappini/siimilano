@@ -19,7 +19,7 @@ export default function Footer() {
                             <img
                                 alt="SII Logo"
                                 className="h-8 w-auto bw-filter"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh_jenW3GIEP-VQyu8DbXUxoX4L2LfMcY2aCW2FUb8Y4b0AElu8mxb2sgW-vJH1Rs-ISIguatM2jhIc7a6lfedjsS-NsgZ4JmqYJUUpZv-zOw6oDge5JE5V1YQ17eLWCv-I0xHH2DHiR_8sEt1246L81P58ODFaVfUCysgbOa31T2_PXsncfIzArXituC7AIZB-9YrarrO9xddHSLrGxOIzx1AL9XzBC158ln6ZOwTuTrC3pVnlHVRj0Z0KqWlrTRJUWjA5yaovlM"
+                                src="/images/hero-ponteggi-facciata.jpg"
                             />
                             <span className="text-xl font-bold tracking-tight uppercase text-slate-900 dark:text-white">S.I.I. SRL</span>
                         </div>
