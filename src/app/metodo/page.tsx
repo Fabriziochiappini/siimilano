@@ -13,7 +13,7 @@ export default function MetodoPage() {
                     <div className="absolute inset-0 z-0">
                         <img
                             alt="Architectural background"
-                            className="w-full h-full object-cover bw-filter opacity-40"
+                            className="w-full h-full object-cover opacity-40"
                             src="/images/cantiere-cemento-armato-grande.jpg"
                         />
                         <div className="absolute inset-0 bg-gradient-to-b from-background-light/20 to-background-light dark:from-background-dark/20 dark:to-background-dark"></div>
@@ -109,7 +109,7 @@ export default function MetodoPage() {
                             <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                             <img
                                 alt="Technical detail"
-                                className="rounded-xl bw-filter shadow-2xl relative z-10 aspect-square object-cover"
+                                className="rounded-xl shadow-2xl relative z-10 aspect-square object-cover"
                                 src="/images/team-cantiere-sopralluogo.jpg"
                             />
                             <div className="absolute bottom-6 right-6 z-20 bg-primary p-6 rounded-lg text-slate-900 border-black border-2">

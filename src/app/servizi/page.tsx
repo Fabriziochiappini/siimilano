@@ -24,7 +24,7 @@ export default function ServiziPage() {
                                 <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800">
                                     <img
                                         alt="Grattacielo moderno a Milano in bianco e nero"
-                                        className="w-full h-full object-cover grayscale contrast-[1.1]"
+                                        className="w-full h-full object-cover contrast-[1.1]"
                                         src="/images/hero-ponteggi-facciata.jpg"
                                     />
                                 </div>
@@ -144,7 +144,7 @@ export default function ServiziPage() {
                                         <div className="md:w-1/3 h-64 md:h-auto overflow-hidden">
                                             <img
                                                 alt={service.title}
-                                                className="w-full h-full object-cover grayscale contrast-[1.1] group-hover:scale-110 transition-transform duration-700"
+                                                className="w-full h-full object-cover contrast-[1.1] group-hover:scale-110 transition-transform duration-700"
                                                 src={service.img}
                                             />
                                         </div>

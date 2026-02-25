@@ -14,7 +14,7 @@ export default function ChiSiamoPage() {
                         <div className="absolute inset-0 bg-black/50 z-10"></div>
                         <img
                             alt="Architettura Moderna"
-                            className="w-full h-full object-cover grayscale transition-all duration-500 hover:grayscale-0"
+                            className="w-full h-full object-cover transition-all duration-500 hover:-0"
                             src="/images/hero-ponteggi-facciata.jpg"
                         />
                     </div>
@@ -46,7 +46,7 @@ export default function ChiSiamoPage() {
                             <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-100 dark:border-slate-800">
                                 <img
                                     alt="Cantiere Edile"
-                                    className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                    className="w-full h-[500px] object-cover hover:-0 transition-all duration-500"
                                     src="/images/operaio-struttura-cemento.jpg"
                                 />
                             </div>
@@ -62,7 +62,7 @@ export default function ChiSiamoPage() {
                                 <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800">
                                     <img
                                         alt="Ovidio Borin"
-                                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                        className="w-full h-full object-cover hover:-0 transition-all duration-500"
                                         src="/images/cantiere-cemento-armato-grande.jpg"
                                     />
                                 </div>
@@ -115,7 +115,7 @@ export default function ChiSiamoPage() {
                                 <div className="h-80 mb-6 overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-100 dark:border-slate-800">
                                     <img
                                         alt={team.title}
-                                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                        className="w-full h-full object-cover hover:-0 transition-all duration-500"
                                         src={team.img}
                                     />
                                 </div>
@@ -150,7 +150,7 @@ export default function ChiSiamoPage() {
                             </div>
                         </div>
 
-                        <div className="mt-20 pt-12 border-t border-slate-800 flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+                        <div className="mt-20 pt-12 border-t border-slate-800 flex flex-wrap justify-center gap-12 opacity-50 hover:-0 transition-all">
                             {/* Using CSS-only placeholders as per design but refined */}
                             <div className="h-12 w-32 border border-slate-700 rounded flex items-center justify-center text-[10px] font-black uppercase tracking-widest text-slate-500">Partner I</div>
                             <div className="h-12 w-32 border border-slate-700 rounded flex items-center justify-center text-[10px] font-black uppercase tracking-widest text-slate-500">Partner II</div>

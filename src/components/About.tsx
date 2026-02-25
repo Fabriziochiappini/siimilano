@@ -9,7 +9,7 @@ export default function About() {
                         <div className="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
                         <img
                             alt="Cantiere S.I.I. SRL Milano"
-                            className="relative rounded-xl bw-filter shadow-2xl w-full aspect-square object-cover"
+                            className="relative rounded-xl shadow-2xl w-full aspect-square object-cover"
                             src="/images/hero-ponteggi-facciata.jpg"
                         />
                         <div className="absolute bottom-6 right-6 bg-primary p-6 rounded-lg text-white max-w-[200px] shadow-xl">

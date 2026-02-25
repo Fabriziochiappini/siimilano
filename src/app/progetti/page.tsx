@@ -92,7 +92,7 @@ export default function ProgettiPage() {
                             <div key={project.title} className="project-card group cursor-pointer relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[4/5]">
                                 <img
                                     alt={project.title}
-                                    className="bw-grid-image w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500"
+                                    className=" w-full h-full object-cover group-hover:-0 group-hover:scale-105 transition-all duration-500"
                                     src={project.img}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>

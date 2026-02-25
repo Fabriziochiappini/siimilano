@@ -148,7 +148,7 @@ export default function ContattiPage() {
                             <div className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-xl group">
                                 <div className="h-64 w-full bg-slate-200 dark:bg-slate-800 relative cursor-pointer">
                                     <div
-                                        className="absolute inset-0 bg-cover bg-center grayscale contrast-125 brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+                                        className="absolute inset-0 bg-cover bg-center group-hover:-0 transition-all duration-700"
                                         style={{ backgroundImage: "url('/images/cantiere-cemento-armato-grande.jpg')" }}
                                     ></div>
                                     <div className="absolute inset-0 flex items-center justify-center">
