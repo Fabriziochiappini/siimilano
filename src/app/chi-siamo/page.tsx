@@ -39,7 +39,10 @@ export default function ChiSiamoPage() {
                                         Fondata nel 2022, <strong className="text-slate-900 dark:text-white font-medium">S.I.I. SRL Milano</strong> nasce con una missione precisa: portare eccellenza tecnica e innovazione nel settore delle costruzioni.
                                     </p>
                                     <p>
-                                        La nostra specializzazione nella <span className="text-primary font-medium">ricostruzione post-sismica</span> rappresenta il cuore della nostra competenza, unendo la sicurezza strutturale a una visione architettonica d'avanguardia che rispetti l'identità del territorio.
+                                        Grazie alle lavorazioni effettuate nell&apos;ambito degli interventi SUPERBONUS l&apos;impresa si è specializzata anche nelle ristrutturazioni e riqualificazioni di strutture abitative ed industriali.
+                                    </p>
+                                    <p>
+                                        La nostra specializzazione nella <span className="text-primary font-medium">ricostruzione post-sismica</span> rappresenta il cuore della nostra competenza, unendo la sicurezza strutturale a una visione architettonica d&apos;avanguardia che rispetti l&apos;identità del territorio.
                                     </p>
                                 </div>
                             </div>
@@ -70,13 +73,10 @@ export default function ChiSiamoPage() {
                             <div className="order-1 lg:order-2">
                                 <span className="text-primary font-bold tracking-widest uppercase text-sm">Leadership</span>
                                 <h2 className="text-4xl font-bold mt-4 mb-2 text-slate-900 dark:text-white uppercase italic tracking-tighter">Il Fondatore: Ovidio Borin</h2>
-                                <p className="text-primary text-xl mb-8 font-bold italic uppercase">Visionario e Guida Tecnica</p>
+
                                 <div className="space-y-6 text-lg text-slate-600 dark:text-slate-400 font-light leading-relaxed">
                                     <p>
-                                        Con oltre 20 anni di esperienza maturata nel panorama edilizio nazionale ed internazionale, Ovidio Borin è la mente dietro la filosofia di S.I.I. SRL Milano.
-                                    </p>
-                                    <p>
-                                        La sua esperienza consolidata con <strong className="text-slate-900 dark:text-white font-medium">Milano Global</strong> ha permesso di creare un ponte tra l'edilizia tradizionale e le nuove frontiere della sostenibilità urbana, focalizzandosi sempre sulla qualità senza compromessi.
+                                        Professionista da oltre 25 anni nel settore della consulenza aziendale, nel 2022 grazie all&apos;interazione con un gruppo di professionisti affermati nel settore edile ed ingegneristico, fonda S.I.I SRL. Ovidio Borin pur non essendo un professionista del settore edile guida la società con la competenza imprenditoriale necessaria dettando la filosofia da seguire.
                                     </p>
                                 </div>
                             </div>

@@ -53,25 +53,25 @@ export default function ProgettiPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                title: 'Residenza San Babila',
+                                title: 'Caronno Pertusella',
                                 tag: 'Efficientamento',
                                 desc: 'Intervento di riqualificazione energetica profonda con installazione di pannelli fotovoltaici integrati.',
                                 img: '/images/hero-ponteggi-facciata.jpg'
                             },
                             {
-                                title: 'Complex Navigli B4',
+                                title: 'Solaro',
                                 tag: 'Antisismico',
                                 desc: 'Messa in sicurezza sismica di un edificio storico degli anni \'30 mediante esoscheletro metallico.',
                                 img: '/images/cantiere-cemento-armato-grande.jpg'
                             },
                             {
-                                title: 'Green Towers Porta Nuova',
+                                title: 'Olgiate Molgora',
                                 tag: 'Cappotti',
                                 desc: 'Applicazione di cappotto termico ad alte prestazioni su facciata continua di 12 piani.',
                                 img: '/images/operaio-struttura-cemento.jpg'
                             },
                             {
-                                title: 'Loft Isola Project',
+                                title: 'Imbersago',
                                 tag: 'Ristrutturazioni',
                                 desc: 'Conversione di ex area industriale in loft residenziali di lusso con finiture premium.',
                                 img: '/images/operaio-ferri-armatura.jpg'

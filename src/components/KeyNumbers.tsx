@@ -12,8 +12,8 @@ export default function KeyNumbers() {
                         <p className="text-primary font-medium tracking-widest uppercase text-xs">Conformità Normativa</p>
                     </div>
                     <div className="space-y-2">
-                        <div className="text-5xl lg:text-6xl font-bold text-white tracking-tighter">+20 Anni</div>
-                        <p className="text-primary font-medium tracking-widest uppercase text-xs">Di Esperienza Nel Settore</p>
+                        <div className="text-5xl lg:text-6xl font-bold text-white tracking-tighter">Uno Staff</div>
+                        <p className="text-primary font-medium tracking-widest uppercase text-xs">Con +25 Anni Di Esperienza</p>
                     </div>
                 </div>
             </div>

@@ -77,7 +77,7 @@ export default function ServiziPage() {
                                     title: 'Efficientamento Energetico',
                                     icon: 'bolt',
                                     img: '/images/cantiere-cemento-armato-grande.jpg',
-                                    desc: 'Diagnosi energetiche complete per la riduzione dei consumi. Ci occupiamo della redazione di APE (Attestato di Prestazione Energetica) e della progettazione di impianti ad alta efficienza per condomini e complessi industriali.',
+                                    desc: 'Diagnosi energetiche complete per la riduzione dei consumi. Ci occupiamo dalla prima fase di progettazione alla consegna finale di impianti ad alta efficienza per condomini, abitazioni e complessi industriali.',
                                     reverse: false,
                                     bullets: [
                                         'Riduzione costi energetici fino al 40%',
