@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   scroll-behavior: smooth;
   --background: #ffffff;
@@ -17,13 +19,6 @@
   /* ── Tipografia ── */
   --font-display: var(--font-oswald), sans-serif;
   --font-sans:    var(--font-lora), serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #3e3e3e;
-    --foreground: #f1f5f9;
-  }
 }
 
 body {
