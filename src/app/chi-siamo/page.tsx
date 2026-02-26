@@ -78,6 +78,9 @@ export default function ChiSiamoPage() {
                                     <p>
                                         Professionista da oltre 25 anni nel settore della consulenza aziendale, nel 2022 grazie all&apos;interazione con un gruppo di professionisti affermati nel settore edile ed ingegneristico, fonda S.I.I SRL. Ovidio Borin pur non essendo un professionista del settore edile guida la società con la competenza imprenditoriale necessaria dettando la filosofia da seguire.
                                     </p>
+                                    <p>
+                                        La sua esperienza consolidata con <strong className="text-slate-900 dark:text-white font-medium">Milano Global</strong> ha permesso di creare un ponte tra l&apos;edilizia tradizionale e le nuove frontiere della sostenibilità urbana, focalizzandosi sempre sulla qualità senza compromessi.
+                                    </p>
                                 </div>
                             </div>
                         </div>
