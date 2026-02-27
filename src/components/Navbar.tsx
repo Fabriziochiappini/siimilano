@@ -17,15 +17,18 @@ export default function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-24">
+                <div className="flex justify-between items-center py-4 md:py-6">
                     <div className="flex items-center gap-4">
-                        <Link href="/" className="flex items-center gap-3">
+                        <Link href="/" className="flex items-center gap-4">
                             <img
                                 alt="S.I.I. SRL Logo"
-                                className="h-16 w-auto"
+                                className="h-24 md:h-32 w-auto object-contain"
                                 src="https://lh3.googleusercontent.com/d/11zhmHeiQhJ-2qzMV6Sd6tFzoBqH0J5RO"
                             />
-                            <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase hidden sm:block font-display">S.I.I. SRL</span>
+                            <div className="flex flex-col">
+                                <span className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 dark:text-white uppercase font-display leading-none">S.I.I. SRL</span>
+                                <span className="text-sm md:text-base text-slate-500 dark:text-slate-400 font-medium tracking-widest mt-1">MILANO</span>
+                            </div>
                         </Link>
                     </div>
 
