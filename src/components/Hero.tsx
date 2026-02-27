@@ -28,20 +28,54 @@ export default function Hero() {
         const context = canvas.getContext('2d');
         if (!context) return;
 
-        const images: HTMLImageElement[] = [];
+        const processedFrames: HTMLCanvasElement[] = [];
         let imagesLoaded = 0;
 
         // Preload images
-        frames.forEach((src) => {
+        frames.forEach((src, index) => {
             const img = new Image();
             img.src = src;
             img.onload = () => {
+                const offscreen = document.createElement('canvas');
+                offscreen.width = img.width;
+                offscreen.height = img.height;
+                const ctx = offscreen.getContext('2d');
+                if (ctx) {
+                    ctx.drawImage(img, 0, 0);
+                    const imgData = ctx.getImageData(0, 0, img.width, img.height);
+                    const data = imgData.data;
+
+                    // La scritta si trova nella parte inferiore (ultimi 35% dell'immagine)
+                    const startY = Math.floor(img.height * 0.65);
+                    for (let y = startY; y < img.height; y++) {
+                        for (let x = 0; x < img.width; x++) {
+                            const i = (y * img.width + x) * 4;
+                            const r = data[i];
+                            const g = data[i + 1];
+                            const b = data[i + 2];
+                            const a = data[i + 3];
+
+                            // Se il pixel è scuro e non completamente trasparente
+                            if (a > 0 && r < 100 && g < 100 && b < 100) {
+                                // Lo coloriamo di bianco
+                                data[i] = 255;
+                                data[i + 1] = 255;
+                                data[i + 2] = 255;
+                                // Aumentiamo un po' l'opacità dei bordi per non avere aloni grigi
+                                if (a > 20 && a < 255) data[i + 3] = Math.min(255, a * 1.5);
+                            }
+                        }
+                    }
+                    ctx.putImageData(imgData, 0, 0);
+                }
+
+                processedFrames[index] = offscreen;
+
                 imagesLoaded++;
                 if (imagesLoaded === frames.length) {
                     resizeCanvas();
                 }
             };
-            images.push(img);
         });
 
         const resizeCanvas = () => {
@@ -66,7 +100,8 @@ export default function Hero() {
 
             // Scroll Logic
             const scrollY = window.scrollY;
-            const maxScroll = window.innerHeight * 1.0;
+            // Animazione più veloce: si completa al 40% dello scroll della finestra
+            const maxScroll = window.innerHeight * 0.4;
 
             // Map scroll to progress 0..1
             let progress = scrollY / maxScroll;
@@ -80,18 +115,19 @@ export default function Hero() {
             const nextFrameIndex = Math.min(frameIndex + 1, totalFrames - 1);
             const mix = absoluteFrame - frameIndex;
 
-            const img = images[frameIndex];
-            const nextImg = images[nextFrameIndex];
+            const img = processedFrames[frameIndex];
+            const nextImg = processedFrames[nextFrameIndex];
 
             if (img) {
                 context.clearRect(0, 0, canvas.width, canvas.height);
                 context.imageSmoothingEnabled = true;
                 context.imageSmoothingQuality = 'high';
 
-                const drawFrame = (image: HTMLImageElement, opacity: number) => {
+                const drawFrame = (image: HTMLCanvasElement, opacity: number) => {
                     const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
                     const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
-                    const ratio = Math.min(hRatio, vRatio);
+                    const baseRatio = Math.min(hRatio, vRatio);
+                    const ratio = baseRatio * 1.4; // Ingrandiamo l'immagine del 40%
 
                     const w = image.width * ratio;
                     const h = image.height * ratio;
