@@ -3,19 +3,19 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-// Frames descending from 44 to 18
+// Frames ascending from 18 to 44 (reversed animation)
 const frames = [
-    "/hero-frames/ezgif-frame-044-removebg-preview.png",
-    "/hero-frames/ezgif-frame-042-removebg-preview.png",
-    "/hero-frames/ezgif-frame-038-removebg-preview.png",
-    "/hero-frames/ezgif-frame-036-removebg-preview.png",
-    "/hero-frames/ezgif-frame-034-removebg-preview.png",
-    "/hero-frames/ezgif-frame-030-removebg-preview.png",
-    "/hero-frames/ezgif-frame-028-removebg-preview.png",
-    "/hero-frames/ezgif-frame-024-removebg-preview.png",
-    "/hero-frames/ezgif-frame-022-removebg-preview.png",
+    "/hero-frames/ezgif-frame-018-removebg-preview.png",
     "/hero-frames/ezgif-frame-020-removebg-preview.png",
-    "/hero-frames/ezgif-frame-018-removebg-preview.png"
+    "/hero-frames/ezgif-frame-022-removebg-preview.png",
+    "/hero-frames/ezgif-frame-024-removebg-preview.png",
+    "/hero-frames/ezgif-frame-028-removebg-preview.png",
+    "/hero-frames/ezgif-frame-030-removebg-preview.png",
+    "/hero-frames/ezgif-frame-034-removebg-preview.png",
+    "/hero-frames/ezgif-frame-036-removebg-preview.png",
+    "/hero-frames/ezgif-frame-038-removebg-preview.png",
+    "/hero-frames/ezgif-frame-042-removebg-preview.png",
+    "/hero-frames/ezgif-frame-044-removebg-preview.png"
 ];
 
 export default function Hero() {
