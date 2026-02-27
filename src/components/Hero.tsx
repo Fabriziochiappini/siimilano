@@ -127,7 +127,9 @@ export default function Hero() {
                     const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
                     const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
                     const baseRatio = Math.min(hRatio, vRatio);
-                    const ratio = baseRatio * 1.9; // Ingrandiamo l'immagine dell'90%
+                    // Riduciamo lo zoom su mobile (es. 1.2) per non tagliare o far sbordare il logo
+                    const scaleFactor = window.innerWidth >= 1024 ? 1.9 : 1.2;
+                    const ratio = baseRatio * scaleFactor;
 
                     const w = image.width * ratio;
                     const h = image.height * ratio;
