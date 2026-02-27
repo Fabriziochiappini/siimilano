@@ -90,6 +90,7 @@ export default function Hero() {
 
                 const drawFrame = (image: HTMLImageElement, opacity: number) => {
                     const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
+                    const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
                     const ratio = Math.min(hRatio, vRatio);
 
                     const w = image.width * ratio;
