@@ -90,8 +90,7 @@ export default function Hero() {
 
                 const drawFrame = (image: HTMLImageElement, opacity: number) => {
                     const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
-                    const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
-                    const ratio = Math.max(hRatio, vRatio);
+                    const ratio = Math.min(hRatio, vRatio);
 
                     const w = image.width * ratio;
                     const h = image.height * ratio;
@@ -134,35 +133,37 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative h-[85vh] flex items-center overflow-hidden bg-black">
-            <div className="absolute inset-0 z-0">
-                <canvas
-                    ref={canvasRef}
-                    id="hero-canvas"
-                    className="w-full h-full object-cover opacity-60"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-            </div>
+        <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-black via-slate-900 to-black py-20 lg:py-0">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+                    {/* Testo a sinistra */}
+                    <div className="w-full lg:w-1/2 max-w-3xl z-10 text-center lg:text-left">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 tracking-tighter uppercase">
+                            ESPERIENZA E INNOVAZIONE <br /><span className="text-primary">IN EDILIZIA</span>
+                        </h1>
+                        <p className="text-lg md:text-xl text-slate-300 font-light mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Ristrutturazioni Edili e Consulenza Tecnica per la riqualificazione del patrimonio immobiliare. Un approccio moderno basato su solide competenze tecniche.
+                        </p>
+                        <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                            <Link href="/servizi">
+                                <button className="bg-primary text-white px-8 py-4 rounded-lg text-base font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
+                                    Scopri i Servizi
+                                    <span className="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="max-w-3xl">
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 tracking-tighter uppercase">
-                        ESPERIENZA E INNOVAZIONE <br /><span className="text-primary">IN EDILIZIA</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-slate-300 font-light mb-10 max-w-2xl leading-relaxed">
-                        Ristrutturazioni Edili e Consulenza Tecnica per la riqualificazione del patrimonio immobiliare. Un approccio moderno basato su solide competenze tecniche.
-                    </p>
-                    <div className="flex flex-wrap gap-4">
-                        <Link href="/servizi">
-                            <button className="bg-primary text-white px-8 py-4 rounded-lg text-base font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
-                                Scopri i Servizi
-                                <span className="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </Link>
+                    {/* Canvas/Animazione a destra */}
+                    <div className="w-full lg:w-1/2 relative flex justify-center items-center h-[50vh] lg:h-[70vh]">
+                        <canvas
+                            ref={canvasRef}
+                            id="hero-canvas"
+                            className="w-full h-full object-contain opacity-90"
+                        />
                     </div>
                 </div>
             </div>
-
         </section>
     );
 }
