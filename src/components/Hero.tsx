@@ -100,8 +100,8 @@ export default function Hero() {
 
             // Scroll Logic
             const scrollY = window.scrollY;
-            // Animazione più veloce: si completa al 40% dello scroll della finestra
-            const maxScroll = window.innerHeight * 0.4;
+            // Animazione più veloce: si completa al 20% dello scroll della finestra
+            const maxScroll = window.innerHeight * 0.2;
 
             // Map scroll to progress 0..1
             let progress = scrollY / maxScroll;
@@ -127,7 +127,7 @@ export default function Hero() {
                     const hRatio = (canvas.width / window.devicePixelRatio) / image.width;
                     const vRatio = (canvas.height / window.devicePixelRatio) / image.height;
                     const baseRatio = Math.min(hRatio, vRatio);
-                    const ratio = baseRatio * 1.4; // Ingrandiamo l'immagine del 40%
+                    const ratio = baseRatio * 1.9; // Ingrandiamo l'immagine dell'90%
 
                     const w = image.width * ratio;
                     const h = image.height * ratio;
