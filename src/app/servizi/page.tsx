@@ -191,9 +191,7 @@ export default function ServiziPage() {
                                     <span className="material-symbols-outlined">arrow_forward</span>
                                 </button>
                             </Link>
-                            <button className="bg-white/20 backdrop-blur-sm border-2 border-slate-900 text-slate-900 px-10 py-4 rounded-xl font-bold hover:bg-white/30 transition-all uppercase tracking-tight">
-                                Scarica Brochure PDF
-                            </button>
+
                         </div>
                     </div>
                 </section>
