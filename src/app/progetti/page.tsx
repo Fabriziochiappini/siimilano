@@ -97,33 +97,33 @@ export default function ProgettiPage() {
                             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-3xl leading-relaxed">
                                 Applicazione di cappotto termico ad alte prestazioni su facciata condominiale con ponteggi e isolamento a regola d&apos;arte.
                             </p>
-                            {/* 4 foto orizzontali: 2 grandi sopra + 2 grandi sotto */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/2]">
+                            {/* Galleria Solaro Normalizzata */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
                                     <img
-                                        alt="Cantiere Solaro - Vista 1"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt="Cantiere Solaro - Foto 1"
+                                        className="w-full h-64 md:h-80 object-cover"
                                         src="/images/cantieri/solaro-1.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/2]">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
                                     <img
-                                        alt="Cantiere Solaro - Vista 2"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt="Cantiere Solaro - Foto 2"
+                                        className="w-full h-64 md:h-80 object-cover"
                                         src="/images/cantieri/solaro-2.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/2]">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
                                     <img
-                                        alt="Cantiere Solaro - Dettaglio isolamento"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt="Cantiere Solaro - Foto 3"
+                                        className="w-full h-64 md:h-80 object-cover"
                                         src="/images/cantieri/solaro-3.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/2]">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
                                     <img
-                                        alt="Cantiere Solaro - Dettaglio ponteggi"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt="Cantiere Solaro - Foto 4"
+                                        className="w-full h-64 md:h-80 object-cover"
                                         src="/images/cantieri/solaro-4.jpg"
                                     />
                                 </div>

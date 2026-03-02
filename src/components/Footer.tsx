@@ -18,8 +18,8 @@ export default function Footer() {
                         <div className="flex items-center gap-3">
                             <img
                                 alt="SII Logo"
-                                className="h-8 w-auto"
-                                src="/images/hero-ponteggi-facciata.jpg"
+                                className="h-20 w-auto"
+                                src="https://lh3.googleusercontent.com/d/11zhmHeiQhJ-2qzMV6Sd6tFzoBqH0J5RO"
                             />
                             <span className="text-xl font-bold tracking-tight uppercase text-slate-900 dark:text-white">S.I.I. SRL</span>
                         </div>
