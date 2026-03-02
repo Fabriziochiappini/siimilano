@@ -9,21 +9,25 @@ export default function ChiSiamoPage() {
 
             <main>
                 {/* Hero Section */}
-                <section className="relative h-[60vh] flex items-center overflow-hidden">
+                <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-white pt-20">
+                    {/* Immagine di Sfondo ad Alta Definizione */}
                     <div className="absolute inset-0 z-0">
-                        <div className="absolute inset-0 bg-black/50 z-10"></div>
-                        <img
-                            alt="Architettura Moderna"
-                            className="w-full h-full object-cover transition-all duration-500 hover:-0"
-                            src="/images/hero-ponteggi-facciata.jpg"
+                        <img 
+                            src="/hero-frames/hero.png" 
+                            alt="S.I.I. SRL Milano Hero Background"
+                            className="w-full h-full object-cover"
+                            style={{ objectPosition: 'center', transform: 'scale(1.33)' }}
                         />
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full">
-                        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 uppercase tracking-tighter italic">Chi Siamo</h1>
-                        <div className="h-1 w-24 bg-primary mb-8"></div>
-                        <h2 className="text-2xl md:text-4xl font-light text-slate-200 max-w-2xl leading-tight">
-                            Una storia di competenza, visione e impegno per il futuro delle costruzioni.
-                        </h2>
+
+                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full h-full flex items-start pt-32">
+                        <div className="w-full text-left">
+                            <h1 className="text-6xl md:text-8xl font-black text-slate-900 mb-6 uppercase tracking-tighter italic drop-shadow-sm">Chi Siamo</h1>
+                            <div className="h-1 w-24 bg-primary mb-8"></div>
+                            <h2 className="text-2xl md:text-4xl font-light text-slate-900 max-w-3xl leading-tight drop-shadow-sm">
+                                Una storia di competenza, visione e impegno per il futuro delle costruzioni.
+                            </h2>
+                        </div>
                     </div>
                 </section>
 

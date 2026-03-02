@@ -51,34 +51,13 @@ export default function ProgettiPage() {
                                     Caronno Pertusella
                                 </h4>
                             </div>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-3xl leading-relaxed">
-                                Intervento di riqualificazione energetica profonda con installazione di pannelli fotovoltaici integrati.
-                            </p>
-                            {/* 3 foto verticali: 1 grande a sinistra + 2 impilate a destra */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px]">
-                                <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 h-[400px] md:h-full">
-                                    <img
-                                        alt="Cantiere Caronno Pertusella - Vista principale"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                        src="/images/cantieri/caronno-pertusella-1.jpg"
-                                    />
-                                </div>
-                                <div className="grid grid-rows-2 gap-4 h-[500px] md:h-full">
-                                    <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-                                        <img
-                                            alt="Cantiere Caronno Pertusella - Dettaglio 1"
-                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                            src="/images/cantieri/caronno-pertusella-2.jpg"
-                                        />
-                                    </div>
-                                    <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-                                        <img
-                                            alt="Cantiere Caronno Pertusella - Dettaglio 2"
-                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                            src="/images/cantieri/caronno-pertusella-3.jpg"
-                                        />
-                                    </div>
-                                </div>
+                            {/* Singola immagine grande */}
+                            <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 h-[400px] md:h-[600px]">
+                                <img
+                                    alt="Cantiere Caronno Pertusella - Vista principale"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                    src="/images/cantieri/caronno-1.jpg"
+                                />
                             </div>
                         </div>
 
@@ -94,36 +73,33 @@ export default function ProgettiPage() {
                                     Solaro
                                 </h4>
                             </div>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-3xl leading-relaxed">
-                                Applicazione di cappotto termico ad alte prestazioni su facciata condominiale con ponteggi e isolamento a regola d&apos;arte.
-                            </p>
-                            {/* Galleria Solaro Normalizzata */}
+                            {/* Galleria Solaro - Griglia 2x2 */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800 h-64 md:h-80">
                                     <img
                                         alt="Cantiere Solaro - Foto 1"
-                                        className="w-full h-64 md:h-80 object-cover"
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                         src="/images/cantieri/solaro-1.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800 h-64 md:h-80">
                                     <img
                                         alt="Cantiere Solaro - Foto 2"
-                                        className="w-full h-64 md:h-80 object-cover"
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                         src="/images/cantieri/solaro-2.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800 h-64 md:h-80">
                                     <img
                                         alt="Cantiere Solaro - Foto 3"
-                                        className="w-full h-64 md:h-80 object-cover"
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                         src="/images/cantieri/solaro-3.jpg"
                                     />
                                 </div>
-                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
+                                <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800 h-64 md:h-80">
                                     <img
                                         alt="Cantiere Solaro - Foto 4"
-                                        className="w-full h-64 md:h-80 object-cover"
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                         src="/images/cantieri/solaro-4.jpg"
                                     />
                                 </div>
@@ -145,9 +121,6 @@ export default function ProgettiPage() {
                                             Olgiate Molgora
                                         </h4>
                                     </div>
-                                    <p className="text-base text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                                        Applicazione di cappotto termico ad alte prestazioni su facciata residenziale multipiano.
-                                    </p>
                                     <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/4]">
                                         <img
                                             alt="Cantiere Olgiate Molgora"
@@ -167,9 +140,6 @@ export default function ProgettiPage() {
                                             Imbersago
                                         </h4>
                                     </div>
-                                    <p className="text-base text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                                        Ristrutturazione completa di edificio residenziale con intervento strutturale e rifacimento facciate.
-                                    </p>
                                     <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-[3/4]">
                                         <img
                                             alt="Cantiere Imbersago"
