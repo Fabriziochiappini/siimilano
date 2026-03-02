@@ -16,7 +16,7 @@ export default function ChiSiamoPage() {
                             src="/hero-frames/hero.png" 
                             alt="S.I.I. SRL Milano Hero Background"
                             className="w-full h-full object-cover"
-                            style={{ objectPosition: 'center', transform: 'scale(1.33)' }}
+                            style={{ objectPosition: 'center', transform: 'scale(1)' }}
                         />
                     </div>
 
