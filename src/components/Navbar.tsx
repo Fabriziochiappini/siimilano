@@ -21,13 +21,12 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <Link href="/" className="flex items-center gap-4">
                             <img
-                                alt="S.I.I. SRL Logo"
+                                alt="S.I.I. MILANO S.R.L. Logo"
                                 className="h-16 md:h-20 w-auto object-contain"
                                 src="https://lh3.googleusercontent.com/d/11zhmHeiQhJ-2qzMV6Sd6tFzoBqH0J5RO"
                             />
                             <div className="flex flex-col">
-                                <span className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 dark:text-white uppercase font-display leading-none">S.I.I. SRL</span>
-                                <span className="text-sm md:text-base text-slate-500 dark:text-slate-400 font-medium tracking-widest mt-1">MILANO</span>
+                                <span className="text-xl md:text-2xl font-black tracking-tight text-slate-900 dark:text-white uppercase font-display leading-none">S.I.I. MILANO S.R.L.</span>
                             </div>
                         </Link>
                     </div>
