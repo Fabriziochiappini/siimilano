@@ -22,7 +22,7 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center gap-4">
                             <img
                                 alt="S.I.I. SRL Logo"
-                                className="h-24 md:h-32 w-auto object-contain"
+                                className="h-16 md:h-20 w-auto object-contain"
                                 src="https://lh3.googleusercontent.com/d/11zhmHeiQhJ-2qzMV6Sd6tFzoBqH0J5RO"
                             />
                             <div className="flex flex-col">
